@@ -1,13 +1,12 @@
 var mysql = require('mysql');
 
 var db_config = {
-    host     : 'testdonut.cluster-c5zuym0juzwt.us-east-2.rds.amazonaws.com', // Your host - either local or cloud
+    host     : 'serverlesspractice.cluster-cxmv8x36m2bv.us-east-2.rds.amazonaws.com', // Your host - either local or cloud
     user     : 'admin', // your username
     password : 'adminadmin', // your password
-    database : 'testdonut' // database name
+    database : 'items' // database name
 };
 
-//connection.connect(); //idk if this is what we need here??
 var connection;
 
 function handleDisconnect() {
